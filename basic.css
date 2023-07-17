@@ -1,0 +1,56 @@
+/* Basic CSS*/
+
+
+/*will affect every HTML element on the page: */
+* {
+  text-align: center;
+  color: blue;
+}
+
+/*CSS id Selector*/
+
+#para1 {
+    text-align: center;
+    color: red;
+}
+
+
+/*CSS Grouping Selector*/
+
+h1 {
+    text-align: center;
+    color: red;
+  }
+  
+  h2 {
+    text-align: center;
+    color: red;
+  }
+  
+  p {
+    text-align: center;
+    color: red;
+  }
+ /* Margins are used to create space around elements, outside of any defined borders.*/
+  div {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+  }
+
+
+
+  div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+
