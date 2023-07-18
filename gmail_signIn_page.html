@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    padding: 4.5rem;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 15px;
+    border-radius: 20px;
+
+  }
+
+  .box h2 {
+    margin: 0px 0 -0.125rem;
+    padding: 0;
+    text-align: center;
+    color: #202124;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .box .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+
+  }
+
+  .box p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .box .inputBox {
+    position: relative;
+  }
+
+  .box .inputBox input {
+    width: 93%;
+    padding: 1.3rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+  }
+
+  .box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: gray;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  .box .inputBox input:focus~label,
+  .box .inputBox input:valid~label,
+  .box .inputBox input:not([value=""])~label {
+    top: -1.125rem;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.75rem;
+    background-color: #fff;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .box .inputBox input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+  }
+
+  .box input[type="submit"] {
+    border: none;
+    color: #fff;
+    background-color: #1a73e8;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    float: right;
+    display: inline-block;
+    width: 20%;
+    padding: 10px
+  }
+
+  .box input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.45), 0 1px 3px 1px rgba(66, 133, 244, 0.3);
+  }
+
+  #info4 {
+    margin-top: 100px;
+    font-size: 13px;
+    font-weight: bold;
+
+  }
+
+  #info4 a {
+    color: #498af2;
+    text-decoration: none;
+    width: 45%;
+    float: left;
+
+  }
+
+  #b {
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    position: static;
+    left: 30px;
+  }
+
+  #b a {
+    color: #498af2;
+    text-decoration: none;
+  }
+
+  #p {
+    font-size: medium;
+    color: gray;
+  }
+
+  #h5 a {
+    color: #498af2;
+    text-decoration: none;
+
+  }
+  #div1
+  {
+    margin-top: 45%;
+    margin-left: 30%;
+    align-items: center;
+
+  }
+
+  #div1 a{
+    color: gray;
+    text-decoration: none;
+  }
+
+  select
+  {
+    padding: 0.2mm;
+    margin: 0%;
+    outline: 0cm;
+  }
+
+</style>
+
+<body>
+  <section>
+    <div class="box">
+      <div class="logo">
+        <div class="base">
+          <img
+            src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg"
+            width="150" height="60"/>
+        </div>
+
+      </div>
+      <h2>Sign In</h2>
+      <p>Use your Google Account</p>
+
+      <div class="inputBox">
+        <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+        <label>Email or phone</label>
+        <div id="b"><a href="#" />Forget email?</a></div>
+      </div>
+
+      <br><br><br>
+      <div id="p">Not your Computer? Use Guest mode to sign in privately.</div>
+      <div id="h5"><a href="#" />Learn more</a></h5>
+        <div id="info4"><a href="#" >Create account</a></div>
+        <input type="submit" name="Next" value="Next">
+
+      </div>
+
+  </section>
+
+  <div id="div1">
+        <label>English (United States)</label>
+        <select name="Language" id="">
+          <option value="">Arabic</option>
+          <option value="">English (United Kingdom)</option>
+          <option value="">Urdu</option>
+          <option value="">Hindi</option>
+          <option value="">Persian</option>
+        </select> &nbsp 
+       <a href="#" id="id1">Help</a> &nbsp &nbsp;
+       <a href="#" id="id1">Privacy</a>&nbsp &nbsp;
+       <a href="#" id="id1">Terms</a>&nbsp &nbsp;
+  </div>
+
+</body>
+
+</html>
